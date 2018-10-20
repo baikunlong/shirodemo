@@ -88,7 +88,7 @@ public class MyController {
         //经过一晚上也没有找到解决方法。先放下了。。。
         String id = request.getSession().getId();
         try {
-            myReaml.clearCached();
+//            myReaml.clearCached();
             SecurityUtils.getSubject().logout();
         } catch (Exception e) {
             System.out.println("用户名为：" + (String) SecurityUtils.getSubject().getPrincipal() + "，注销抛异常了");
